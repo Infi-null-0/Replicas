@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --clr-bg: white;
+    --clr-hover: #ddd;
+    --clr-click: #ccc;
+    --clr-fg: #111;
+}
+
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    top: 56px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-bg);
+    padding: 12px;
+    z-index: 200;
+    /* toggle to show sidebar */
+    /* display: none; */
+}
+
+.sidebar-link {
+    display: grid;
+    grid-template-columns: 40px 100px;
+    gap: 8px;
+    padding: 9px 15px;
+    border-radius: 12px;
+    align-items: center;
+    transition: background-color 0.15s;
+    cursor: pointer;
+    img {
+        height: 22px;
+        width: 22px;
+        object-fit: cover;
+        object-position: center;
+    }
+    p {
+        color: #111;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: var(--clr-hover);
+    }
+    &:active {
+        background-color: var(--clr-click);
+    }
+}
+
+p[class="sidebar-heading"] {
+    padding: 9px 15px;
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+    background-color: var(--clr-click);
+    height: 1px;
+    margin: 8px 0px;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --clr-bg : white;
+    --clr-bg-2 : #eee;
+    --clr-bg-hover : #ddd;
+    --clr-bg-click : #ccc;
+    --clr-bg-click-2 : #bbb;
+    --clr-bg-spl-click : #aaa;
+    --clr-border : #ccc;
+    --clr-fg-1 : #111;
+    --clr-fg-2 : #606060;
+}
+
+* {
+    font-family: 'Robot', Arial, sans-serif;
+}
+
+/* header */
+
+.header-bar {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: var(--clr-bg);
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 8px 18px;
+    gap: 60px;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+/* sections */
+
+.left-section {
+    display: flex;
+}
+
+.right-section {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    padding-left: 24px;
+}
+
+.middle-section {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    gap: 0px 8px;
+    max-width: 560px;
+    min-width: 188px;
+}
+
+.yt-logo {
+    height: 20px;
+    padding: 10px 16px;
+}
+
+.circle-btn {
+    display: flex;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--clr-bg);
+    transition: background-color 0.15s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--clr-bg-hover);
+    }
+
+    &:active {
+        background-color: var(--clr-bg-click);
+    }
+
+    img {
+        height: 24px;
+        width: 24px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .menu {
+        height: 18px;
+        width: 18px;
+        padding: 3px;
+    }
+}
+
+#profile {
+    height: 40px;   
+    width: 40px;
+    padding: 0px;
+
+    img {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+/* middle */
+
+.search-bar-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+
+    input {
+        height: 40px;
+        width: 100%;
+        min-height: 20px;
+        border: 1px solid var(--clr-border);
+        border-right: none;
+        border-radius: 20px 0px 0px 20px;
+        padding-left: 16px;
+        padding-right: 12px;
+        font-size: 16px;
+        background-color: var(--clr-bg);
+        box-shadow: inset 0px 0px 8px var(--clr-bg-2);
+        color: var(--clr-fg-1);
+        transition: border 0.15s, box-shadow 0.15s;
+
+        &:focus {
+            outline: none;
+            border: 1px solid #0078d488;
+            border-right: 1px solid #0078d488;
+            box-shadow: inset 0px 0px 8px #0078d422;
+        }
+    }
+}
+
+.search-bar-button {
+    border: 1px solid var(--clr-border);
+    border-radius: 0px 20px 20px 0px;
+    background-color: var(--clr-border);
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.15s;
+
+    img {
+        height: 18px;
+        padding: 3px;  
+    }
+}
+
+#voice-search {
+    img {
+        height: 18px;
+        width: 18px;
+        object-fit: contain;
+        padding: 3px;
+    }
+}
+
+.search-bar-button, #voice-search {
+    background-color: var(--clr-border);
+
+    &:hover {
+        background-color: var(--clr-bg-click-2);
+    }
+
+    &:active {
+        background-color: var(--clr-bg-spl-click);
+    }
+}
+
+
+/* tooltip */
+
+button:has(> .tooltip) {
+    position: relative;
+
+    &:hover {
+        .tooltip {
+            opacity: 1;
+        }
+    }
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--clr-fg-1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--clr-border);
+    transition: opacity 0.15s;
+    white-space: nowrap;
+}
+
+/* notification */
+
+button:has(> .notif-count) {
+    position: relative;
+}
+
+.notif-count {
+    position: absolute;
+    top: 6px;
+    right: -2px;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: rgb(217, 5, 5);
+    padding: 0px 4px;
+    border-radius: 8px;
+    border: 1px solid var(--clr-bg);
+    color: var(--clr-bg);
+}
+
+@media screen and (min-width: 0px) and (max-width: 660px) {
+    #menu, #create, #notifications {
+        display: none;
+    }
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon here -->
+    <link rel="icon" type="image/png" href="res/img/icons/yt-icon.png" />
+    <!-- title -->
+    <title>YouTube</title>
+    <!-- css -->
+    <link rel="stylesheet" class="Header CSS" href="styles/header.css" />
+    <link rel="stylesheet" class="Header CSS" href="styles/sidebar.css" />
+    <link rel="stylesheet" class="Main CSS" href="styles/main.css" />
+    <!-- animated icon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-bar">
+        <!-- left section -->
+        <div class="left-section">
+          <button class="circle-btn" id="menu">
+            <img class="menu" src="res/img/icons/menu.png" />
+            <p class="tooltip">Menu</p>
+          </button>
+          <a href="https://www.youtube.com/">
+            <img class="yt-logo" src="res/img/icons/yt-logo.png" />
+          </a>
+        </div>
+        <!-- middle section -->
+        <div class="middle-section">
+          <div class="search-bar-wrapper">
+            <input type="search" placeholder="Search" />
+            <button class="search-bar-button">
+              <img src="res/img/icons/search.png" alt="search-icon" />
+              <p class="tooltip">Search</p>
+            </button>
+          </div>
+          <button class="circle-btn" id="voice-search">
+            <img src="res/img/icons/mic.png" alt="voice-search-icon" />
+            <p class="tooltip">Voice search</p>
+          </button>
+        </div>
+        <!-- right section -->
+        <div class="right-section">
+          <button class="circle-btn" id="create">
+            <img src="res/img/icons/create.png" alt="create-icon" />
+            <tooltip class="tooltip">Create video</tooltip>
+          </button>
+          <button class="circle-btn" id="notifications">
+            <img src="res/img/icons/bell.png" alt="notification-icon" />
+            <p class="tooltip">Notifications</p>
+            <p class="notif-count">9+</p>
+          </button>
+          <button class="circle-btn" id="profile">
+            <img src="res/img/icons/infinull_dp2.png" alt="profile-pic" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- sidebar -->
+      <nav class="sidebar">
+        <div class="sidebar-link">
+          <img src="res/img/icons/home.png" alt="home-icon" />
+          <p>Home</p>
+        </div>
+        <div class="sidebar-link">
+          <img src="res/img/icons/shorts.png" alt="shorts-icon" />
+          <p>Shorts</p>
+        </div>
+        <div class="sidebar-link">
+          <img src="res/img/icons/subscriptions.png" alt="subs-icon" />
+          <p>Subscriptions</p>
+        </div>
+        <hr />
+        <p class="sidebar-heading">You &gt;</p>
+        <div class="sidebar-link">
+          <img src="res/img/icons/history.png" alt="history-icon" />
+          <p>History</p>
+        </div>
+        <div class="sidebar-link">
+          <img src="res/img/icons/settings.png" alt="settings-icon" />
+          <p>Settings</p>
+        </div>
+        <div class="sidebar-link">
+          <img src="res/img/icons/help.png" alt="help-icon" />
+          <p>help</p>
+        </div>
+      </nav>
+      <!-- content here -->
+      <!-- video section -->
+      <section class="videos-grid">
+        <a href="https://github.com/Infi-null-0/" target="_blank">
+          <div class="video" id="infi-card">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail0.png" />
+            <div class="video-meta">
+              <img class="channel-icon" src="res/img/icons/infinull_dp2.png" />
+              <div class="video-text">
+                <p class="video-title">
+                  Hey There! This is 99% front-end 1% magic ✨
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Infinull</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">21M views &#183; just now</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/8wysIxzqgPI?si=dfG7-tvCUV0MR4E9"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail2.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile2.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  My Brain after 596 Leetcode Problems | Leetcode
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">NeetCode</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">23M views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/S_RorY_FRvo?si=UX5gTcl6t27A9qfU"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail3.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile3.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  GitHub Copilot just got promoted to Captain | Copilot
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Fireship</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">655K views &#183; 3 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/AOYUEqlWOGU?si=ez8tbn_SmMyjnUBi"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail4.jpg" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile4.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  How to become a Coding Machine | Guide 🤖
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">bigboxSWE</p>
+                </div>
+                <p class="video-stats">67K views &#183; 4 days ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/0AzTcaZAkF0?si=cBR2ZAVKTpArBaTp"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail5.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile5.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  What's New in Java 22 in 2 Minutes... - Sip of Java
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Java</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">40K views &#183; 2 months ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/watch?v=SaBevq83WbM" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail6.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile6.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  C++ or Java I Which Coding Language to choose?
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Striver</p>
+                </div>
+                <p class="video-stats">75K views &#183; 1 year ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+      <div class="shorts-heading">
+        <img src="res/img/icons/shorts-red.png" />
+        <p>Shorts</p>
+      </div>
+      <!-- shorts section -->
+      <section class="shorts-grid">
+        <a href="https://www.youtube.com/shorts/RreEKjVqSZg" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts5.png" />
+            <div class="short-text">
+              <p class="short-title">Time is precious⌛ #shortfilm #video</p>
+              <p class="short-views">3.1M views</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/shorts/XU0orUggnAw" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts6.png" />
+            <div class="short-text">
+              <p class="short-title">
+                Glistening Pearl White on Dark Side of Moon 🌒
+              </p>
+              <p class="short-views">2.4K views</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/shorts/K-Mbl-iJFTA" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts7.png" />
+            <div class="short-text">
+              <p class="short-title">
+                Snip and save faster with this shortcut ✂️
+              </p>
+              <p class="short-views">1K views</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/shorts/itEZAQw9Ssw" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts8.png" />
+            <div class="short-text">
+              <p class="short-title">
+                5 VS Code Shortcuts you must know | VS Tips
+              </p>
+              <p class="short-views">6.7M views</p>
+            </div>
+          </div>
+        </a>
+      </section>
+      <section class="show-more">
+        <hr />
+        <button class="show-more-btn">
+          Show more
+          <img src="res/img/icons/down-arrowhead.png" />
+        </button>
+      </section>
+      <section class="videos-grid">
+        <a
+          href="https://youtu.be/2-z-iwfPslI?si=BIkXaxWM41mM2Edl"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail7.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile7.png"
+              />
+              <div class="video-text">
+                <p class="video-title">Microsoft Records Everything You Do</p>
+                <div class="video-flex">
+                  <p class="video-channel">ThePrimeTime</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">111K views &#183; 1 days ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/watch?v=ImSjJwzqAss" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail8.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile8.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  The Importance of Specialization in Coding
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Traversy Media</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">116K views &#183; 9 days ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/Qvlb-Yo6Rqo?si=qZ1kyXSTPE0B3iuu"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail9.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile9.png"
+              />
+              <div class="video-text">
+                <p class="video-title">How I made a 3D Level in 2D Game</p>
+                <div class="video-flex">
+                  <p class="video-channel">Spu7Nix</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">2.4M views &#183; 1 month ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/LNmS6Mwwbf4?si=IPG7eez0JrMOSTJ-"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail10.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile10.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  7 HTML Features You Probably Don't Know
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Awesome</p>
+                </div>
+                <p class="video-stats">20K views &#183; 2 days ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/watch?v=qrvhmo5LSOQ" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail11.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile11.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Another glorious battle for AI dominance
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Fireship</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">1.1M views &#183; 8 days ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/watch?v=jFrGhodqC08" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/thumbnail12.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/profile12.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  The cloud is over-engineered and overpriced (no music)
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Tom Delalande</p>
+                </div>
+                <p class="video-stats">328K views &#183; 4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+      <div class="shorts-heading">
+        <img src="res/img/icons/shorts-red.png" />
+        <p>Shorts</p>
+      </div>
+      <section class="shorts-grid">
+        <a href="https://www.youtube.com/shorts/uiFINWtwSXE" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts1.png" />
+            <div class="short-text">
+              <p class="short-title">
+                Introducing the all-new Apple Vision Pro
+              </p>
+              <p class="short-views">2M views</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/shorts/hTgJBO8rkVo" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts2.png" />
+            <div class="short-text">
+              <p class="short-title">
+                25 Years in Search: The Most Searched Hero
+              </p>
+              <p class="short-views">108K views</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/shorts/3NOdxhlyeKA" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts3.png" />
+            <div class="short-text">
+              <p class="short-title">
+                Asus ProArt LC 420 PC Building Guide #CES2024
+              </p>
+              <p class="short-views">56k views</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.youtube.com/shorts/Ja4gZQp86Nk" target="_blank"
+          ><div class="short">
+            <img class="thumbnail" src="res/img/videos/shorts/shorts4.png" />
+            <div class="short-text">
+              <p class="short-title">
+                Using Macro Mode of Motorola Edge 30 Ultra
+              </p>
+              <p class="short-views">7.8K views</p>
+            </div>
+          </div>
+        </a>
+      </section>
+      <section class="show-more">
+        <hr />
+        <button class="show-more-btn">
+          Show more
+          <img src="res/img/icons/down-arrowhead.png" />
+        </button>
+      </section>
+      <section class="videos-grid">
+        <a
+          href="https://youtu.be/34Na4j8AVgA?si=0NQGTX9vSEe3y_Ts"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/song-tb1.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/song-pr1.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  The Weeknd - Starboy ft. Daft Punk (Official Video)
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">The Weeknd</p>
+                  <img src="res/img/icons/music.png" alt="music-icon" />
+                </div>
+                <p class="video-stats">2.4B views &#183; 7 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/watch?v=fHI8X4OXluQ" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/song-tb2.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/song-pr2.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  The Weeknd - Blinding Lights (Official Audio)
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">The Weeknd</p>
+                  <img src="res/img/icons/music.png" alt="music-icon" />
+                </div>
+                <p class="video-stats">802M views &#183; 4 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- done -->
+        <a href="https://youtube.com/watch?v=4NmuR-O1LOE" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/series-tb1.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/series-pr1.png"
+              />
+              <div class="video-text">
+                <p class="video-title">Kadhaipoma'2 | Avalum Naanum</p>
+                <div class="video-flex">
+                  <p class="video-channel">BlackSheep</p>
+                </div>
+                <p class="video-stats">1.3M views &#183; 2 months ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://youtube.com/watch?v=nw2P7zCQ-xY8" target="_blank">
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/series-tb2.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/series-pr2.png"
+              />
+              <div class="video-text">
+                <p class="video-title">
+                  Influ-Yen-Sir 👨🏻‍🎤 | Nandha &amp; Pooja | Finally
+                </p>
+                <div class="video-flex">
+                  <p class="video-channel">Finally</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">590K views &#183; 9 days ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/mqqft2x_Aa4?si=nnJ8_Wv6fPoOZupx"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/trailer-tb1.png" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/trailer-pr1.png"
+              />
+              <div class="video-text">
+                <p class="video-title">THE BATMAN - Main Trailer (2022) [HD]</p>
+                <div class="video-flex">
+                  <p class="video-channel">Warner Bros.</p>
+                  <img src="res/img/icons/tick.png" alt="verified-icon" />
+                </div>
+                <p class="video-stats">61M views &#183; 2 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://youtu.be/SUXWAEX2jlg?si=20v1G8iyx4dJQL--"
+          target="_blank"
+        >
+          <div class="video">
+            <img class="thumbnail" src="res/img/videos/vids/trailer-tb2.jpg" />
+            <div class="video-meta">
+              <img
+                class="channel-icon"
+                src="res/img/videos/vids/trailer-pr2.png"
+              />
+              <div class="video-text">
+                <p class="video-title">Fight Club - Main Trailer (1999) [HD]</p>
+                <div class="video-flex">
+                  <p class="video-channel">Super Anon</p>
+                </div>
+                <p class="video-stats">6.8M views &#183; 13 years ago</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <img class="down-red-l" src="res/img/icons/down-red.png" />
+      <img class="down-red-r" src="res/img/icons/down-red.png" />
+      <img class="down-red-l" src="res/img/icons/down-red.png" />
+      <img class="down-red-r" src="res/img/icons/down-red.png" />
+      <img class="down-red-l" src="res/img/icons/down-red.png" />
+      <img class="down-red-r" src="res/img/icons/down-red.png" />
+      <div class="footer-card">
+        <div class="footer-gradient"></div>
+        <div class="footer-icon">
+          <lord-icon
+            id="smile"
+            src="https://cdn.lordicon.com/rpuubijr.json"
+            trigger="loop"
+            colors="primary:#e88c30,secondary:#e83a30"
+            style="width: 60px; height: 60px"
+          >
+          </lord-icon>
+        </div>
+        <div class="footer-text">
+          <p class="f-title">Thank You!</p>
+          <p class="f-content">
+            Congratulations! You've reached the footer. Thanks for spending your
+            precious time and eyeball energy on my website. You deserve a
+            standing ovation, but since this is just a frontend, you'll have to
+            imagine it.
+          </p>
+          <p class="f-quote">"Stay awesome and keep scrolling!"</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
