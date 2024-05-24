@@ -23,7 +23,7 @@ body {
     background-color: var(--clr-bg-2);
     padding-top: 56px;
     padding-left: 202px;
-    min-width: 540px;
+    /* min-width: 540px; */
 }
 
 a {
@@ -349,5 +349,26 @@ footer {
 @media screen and (min-width: 0px) and (max-width: 660px) {
     .videos-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .footer-card {
+        width: 180px;
+    }
+
+    .shorts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
+    .down-red-l {
+        margin-left: 40px;
+    }
+    
+    .down-red-r {
+        margin-right: 40px;
     }
 }
